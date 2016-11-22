@@ -725,3 +725,53 @@ ng_beacon.menu.softdevice.s130.softdeviceversion=2.0.1
 ng_beacon.menu.softdevice.s130.upload.maximum_size=151552
 ng_beacon.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
 ng_beacon.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_xxaa.ld
+
+
+id101.name=ID101 tracker
+
+id101.upload.tool=sandeepmistry:openocd
+id101.upload.protocol=jlink
+id101.upload.target=nrf51
+id101.upload.maximum_size=262144
+id101.upload.setup_command=transport select swd;
+
+id101.bootloader.tool=sandeepmistry:openocd
+
+id101.build.mcu=cortex-m0
+id101.build.f_cpu=16000000
+id101.build.board=GENERIC
+id101.build.core=nRF5
+id101.build.variant=Generic
+id101.build.variant_system_lib=
+id101.build.extra_flags=-DNRF51
+id101.build.float_flags=
+id101.build.ldscript=nrf51_{build.chip}.ld
+
+id101.menu.chip.xxaa=16 kB RAM, 256 kB flash (xxaa)
+id101.menu.chip.xxaa.build.chip=xxaa
+id101.menu.chip.xxac=32 kB RAM, 256 kB flash (xxac)
+id101.menu.chip.xxac.build.chip=xxac
+
+id101.menu.softdevice.none=None
+id101.menu.softdevice.none.softdevice=none
+
+id101.menu.softdevice.s110=S110
+id101.menu.softdevice.s110.softdevice=s110
+id101.menu.softdevice.s110.softdeviceversion=8.0.0
+id101.menu.softdevice.s110.upload.maximum_size=151552
+id101.menu.softdevice.s110.build.extra_flags=-DNRF51 -DS110 -DNRF51_S110
+id101.menu.softdevice.s110.build.ldscript=armgcc_s110_nrf51822_{build.chip}.ld
+
+id101.menu.softdevice.s130=S130
+id101.menu.softdevice.s130.softdevice=s130
+id101.menu.softdevice.s130.softdeviceversion=2.0.1
+id101.menu.softdevice.s130.upload.maximum_size=151552
+id101.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
+id101.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_{build.chip}.ld
+
+id101.menu.lfclk.lfxo=Crystal Oscillator
+id101.menu.lfclk.lfxo.build.lfclk_flags=-DUSE_LFXO
+id101.menu.lfclk.lfrc=RC Oscillator
+id101.menu.lfclk.lfrc.build.lfclk_flags=-DUSE_LFRC
+id101.menu.lfclk.lfsynt=Synthesized
+id101.menu.lfclk.lfsynt.build.lfclk_flags=-DUSE_LFSYNT

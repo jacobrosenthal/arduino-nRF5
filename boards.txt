@@ -747,8 +747,6 @@ id101.build.extra_flags=-DNRF51
 id101.build.float_flags=
 id101.build.ldscript=nrf51_{build.chip}.ld
 
-id101.menu.chip.xxaa=16 kB RAM, 256 kB flash (xxaa)
-id101.menu.chip.xxaa.build.chip=xxaa
 id101.menu.chip.xxac=32 kB RAM, 256 kB flash (xxac)
 id101.menu.chip.xxac.build.chip=xxac
 

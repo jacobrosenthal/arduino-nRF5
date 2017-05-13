@@ -733,7 +733,7 @@ id101.upload.tool=sandeepmistry:openocd
 id101.upload.protocol=jlink
 id101.upload.target=nrf51
 id101.upload.maximum_size=262144
-id101.upload.setup_command=transport select swd;
+id101.upload.setup_command=transport select swd; set WORKAREASIZE 0;
 
 id101.bootloader.tool=sandeepmistry:openocd
 
